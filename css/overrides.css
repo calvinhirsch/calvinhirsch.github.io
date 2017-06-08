@@ -1,8 +1,34 @@
+@font-face {
+	font-family: DistProTh;
+	src: url('DistProTh.otf');
+}
+
+body {
+	background-color: #111;
+}
+
+.mainbg {
+	background-image: url("bgmain.jpg");
+	background-width: 100%;
+}
+
+.homebutton {
+	margin: auto;
+	margin-top: 20px;
+	border-width: 0;
+	padding: 15px 20px 15px 20px;
+	font-family: DistProTh;
+	font-size: 1.3em;
+	font-weight: 100;
+	letter-spacing: 2;
+	text-align: center;
+	display: block;
+}
+
 .navigation {
 	padding: 0;
 	margin: 0;
 	border-radius: 0;
-	background-color: #111;
 }
 
 .nospace {
@@ -10,11 +36,29 @@
 	margin: 0;
 }
 
+.clear {
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
+}
+
 .navbar {
 	padding: 0 8% 0 8%;
-	background-color: #111;
+	/*background-color: #111;*/
 	border-radius: 0;
 	border-bottom: 1px solid #ff4444;
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
+}
+
+.navbar-header {
+}
+
+.brand {
+	padding-bottom: 5px;
+	padding-right: 5px;
+	height: 68px;
 }
 
 .navbar-nav>li {
@@ -27,33 +71,49 @@
 	display: block;
 	height: 100px;
 	padding: 0;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
 	margin: auto;
 	min-width: 8vw;
 	text-align: center;
 	font-size: 1.3em;
-	font-family: District Pro;
+	font-family: DistProTh;
 	letter-spacing: 1px;
 }
 
-.navbar-nav>li>a:not(.active):not(.navbar-brand) {
-    background-color: #111;
-	color: #FF4444;
+.navbar-nav>.open {
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
+}
+
+.navbar-nav>li>a:not(.active) {
+    /*background-color: #111;*/
+	color: #DDDDDD;
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
 }
 
 .active {
-	background-color: #FF4444;
-	color: #000000;
+	color: #FFFFFF;
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
 }
 
 .navbar-nav>li>a:not(.navbar-brand):hover {
-	background-color: #FF4444;
-	color: #000000;
+	color: #FFFFFF;
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
 }
 
 .navbar-nav>li>a.navbar-brand:hover {
-	background-color: #111;
+	/*background-color: #111;*/
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
 }
 
 .searchbar {
@@ -75,33 +135,115 @@
 .dropdown-menu, .dropdownnav {
 	padding: 0;
 	margin: 0;
-	font-family: District Pro;
+	font-family: DistProTh;
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
 }
 
 .dropdown-menu>li>a, .dropdowna {
-	background-color: #111;
+	/*background-color: #111;*/
 	padding: 12px;
 	padding-left: 30px;
 	padding-right: 5px;
-	color: #ff4444;
+	color: #DDDDDD;
 	font-size: 1.3em;
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
 }
 
 .dropdowna, .dropdown-menu>li>a:hover {
-	background-color: #ff4444;
-	color: #111;
+	/*background-color: #ff4444;*/
+	color: #FFFFFF;
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
 }
+
+.dropdowna, .dropdown-menu>li>a {
+	/*background-color: #ff4444;*/
+	color: #FFFFFF;
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
+}
+
+
+
+.hometext {
+	width: 100%;
+	display: block;
+	margin: auto;
+	margin-top: 8%;
+	font-family: DistProTh;
+	color: #FFFFFF;
+}
+
+.hometitle {
+	display: block;
+	font-size: 5em;
+	color: #EEEEEE;
+	letter-spacing: 10;
+	text-align: center;
+}
+
+.homedescription {
+	margin: 0;
+	margin-top: 32%;
+	font-size: 1.6em;
+	color: #EEEEEE;
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 16%;
+}
+
+
+
+
 
 .caro {
-	background-color: #111;
 }
 
-#shopitems {
+.carousel {
+	padding-top: 2px;
+	background-color: #DDDDDD;
+}
+
+
+
+.shopContainer {
+	width: 100%;
+	background-color: #EEEEEE;
+	padding: 0;
+	margin: 0;
+}
+
+.shopheader {
+	background-color: #222;
+	border-width: 0;
+	border-top-width: 2px;
+	border-style: solid;
+	border-color: #DDDDDD;
+	padding: 25px;
+	color: #FFFFFF;
+	text-shadow: 4px 4px 0px #7d77d8;
+	font-family: DistProTh;
+	font-weight: 100;
+	letter-spacing: 22;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+.shopitems {
 	width: 100%;
 	max-width: 1400;
 	text-align: center;
-	margin: auto;
+	margin: 0 auto;
+	padding: 0;
 	padding-top: 100px;
+	background-color: #EEEEEE;
 }
 
 .shopitem {
@@ -115,8 +257,9 @@
 
 .shopitemimg {
 	height: 250px;
-	width: 250px;
-	border: none;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	border: 8px #504aa5 solid;
 	background-color: #222;
 }
 
@@ -124,26 +267,36 @@
 	padding-bottom: 60px;
 }
 
+
+
+
 .login-dropdown {
-	background-color: #111;
-	color: #ff4444;
+	/*background-color: #111;*/
+	color: #EEEEEE;
 	padding: 15px;
 	font-size: 1.4em;
 }
 
 .loginform {
-	border: 1px solid #ff4444;
-	background-color: #111;
-	color: #ff4444;
+	border: 1px solid #DDDDDD;
+	/*background-color: #111;*/
+	color: #333333;
 	margin-bottom: 3px;
 }
 
 .loginbutton {
-	background-color: #ff4444;
-	color: black;
-	border: 2px solid #ff4444;
-	margin-top: 8px;
+	background: transparent;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	margin-top: 20px;
+	padding: 8px 15px 8px 15px;
+	font-family: DistProTh;
+	font-size: 0.9em;
 }
+
+
+
+
 
 .contactmain {
 	padding: 0;
@@ -171,34 +324,147 @@
 	font-size: 1.3em;
 }
 
+.homedark {
+	background-image: url("carbonfiber.jpg");
+	background-size: 50%;
+	color: #FFFFFF;
+	font-family: DistProTh;
+	width: 100%;
+	padding: 0;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
 
-/*
-.main {
-    background-color: #333;
-    width: 800px;
-    padding: 20px;
-    border: 2px solid #FF4444;
-    margin-top: 30px;  
-    margin-left: auto;
-    margin-right: auto;
+.homedark>.row>.col-md-5 {
+	margin-top: 25px;
 }
-ul {
-    list-style-type: none;  
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
+
+.homedark>.row>.col-md-5>h1 {
+	font-size: 2.3em;
+	padding: 0;
+	margin: 0;
+	font-weight: 600;
+	letter-spacing: 2;
 }
-li {
-    float: left;
+
+.homedark>.row>.col-md-5>p {
+	border-width: 0;
+	border-left-width: 4px;
+	border-color: #504aa5;
+	border-style: solid;
+	padding: 0;
+	margin-top: 28px;
+	padding-left: 15px;
+	font-size: 1.3em;
+	color: #DDDDDD
 }
-li a:hover:not(.active) {
-    background-color: #111;
+
+.homedark>.row>.col-md-3 {
+	padding: 15px;
 }
-.active {
-    background-color: #FF4444;
+
+.homeimg {
+	width: 100%;
 }
-*/
+
+.homeinfo {
+}
+
+.homedark>.row>.col-md-12 {
+	text-align: center;
+}
+
+.homedark>.row>.col-md-12>.homebutton {
+	background-color: #504aa5;
+}
+
+.homelight {
+	background-color: #FFFFFF;
+	color: #504aa5;
+	font-family: DistProTh;
+	width: 100%;
+	padding: 0;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+.homelight>.row>div {
+	
+}
+
+.homelight>.row>div>h1 {
+	font-size: 4em;
+	text-align: center;
+	font-weight: 900;
+}
+
+.homelight>.row>div>h2 {
+	font-size: 8em;
+	text-align: center;
+	font-weight: 900;
+	margin-bottom: -20px;
+}
+
+.homelight>.row>div>p {
+	font-size: 1.5em;
+	text-align: center;
+	color: #000;
+}
+
+.homelight>.row>div>p>b {
+	color: #504aa5;
+}
+
+.homelight>.row>div>.divider {
+	height: 2px;
+	width: 20%;
+	background-color: #504aa5;
+	display: block;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.homelight>.row>div>.homebutton {
+	background-color: #504aa5;
+	color: white;
+	font-weight: 900;
+	font-size: 1.5em;
+	letter-spacing: 3;
+	margin-top: 60px;
+}
+
+.homeimgbg {
+	background-image: url("serverroom.jpg");
+	background-size: 100%;
+}
+
+.homeimgbg>.hometitle {
+	padding-top: 10%;
+	padding-bottom: 50%;
+}
+
+
+
+.footer {
+	background-color: #222;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	color: #DDDDDD;
+	font-family: DistProTh;
+	font-weight: 900;
+	
+}
+
+.footer>.row>div>.contact {
+	display: block;
+	text-align: center;
+}
+
+.footercontactimg {
+	width: 75px;
+	height: 75px;
+	padding: 0;
+	margin: 0;
+}
