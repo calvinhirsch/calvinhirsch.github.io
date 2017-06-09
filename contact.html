@@ -21,69 +21,78 @@
 </head>
 <body>
 	
-	<nav class="navbar nospace">
-	  <div class="container-fluid nospace">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnavbar" aria-expanded="false">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse nospace" id="mainnavbar">
-		  <ul class="nav navbar-nav navigation">
-			<li><a href="index.html" class="navbar-brand"><img src="css/burgahboybrand.png" class="brand"  style="height: 100px; padding: 15px; padding-right: 30px;"></img></a></li>
-			<li><a class="active" href="index.html"><span class="navspan">HOME</span> <span class="sr-only"></span></a></li>
-			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navspan">SHOP</span> <span class="caret"></span></a>
-			  <ul class="dropdown-menu">
-				<li><a href="shop.html">Trending</a></li>
-				<li><a href="shop.html">Rising</a></li>
-				<li><a href="shop.html">Top Rated</a></li>
-				<li><a href="shop.html">Popular</a></li>
-				<li><a href="shop.html">Staff Picks</a></li>
-			  </ul>
-			</li>
-		  </ul>
-		  <!--
-		  <form class="navbar-form navbar-left searchbar nospace" role="search">
-			<div class="navspan">
-				<div class="form-group nospace" style="font-size: 1.2em;">
-				  <input type="text" class="form-control" style="height: 40px;" placeholder="Search Products">
-				</div>
-				<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" style="padding-top: 5px; padding-bottom: 6px;"></span></button>
+	<div class="contactbg nospace">
+		
+		<nav class="navbar">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnavbar" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="index.html"><img class="brandimg" src="css/logo.png" class="brand"></img></a>
 			</div>
-		  </form>
-		  -->
-		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="#"><span class="navspan">CONTACT</span></a></li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navspan" id="accountstatus">LOGIN</span> <span class="caret"></span></a>
-				<div class="dropdown-menu" id="account-dropdown">
-					<div class="login-dropdown">
-						<form method="post" action="ingen_javascript.htm" 
-						  onsubmit="CheckPassword();return false;" name="login">
-						Username: <input type="text" name="username" class="loginform"><br>
-						Password: <input type="password" name="password" class="loginform"><br>
-						<input type="submit" value="log på" class="loginbutton"
-						  onclick="CheckPassword();return false;">
-						</form>
+
+			<div class="collapse navbar-collapse nospace" id="mainnavbar">
+			  <ul class="nav navbar-nav navigation">
+				<li><a class="active" href="index.html"><span class="navspan">HOME</span> <span class="sr-only"></span></a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navspan">SHOP</span> <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="shop.html">Trending</a></li>
+					<li><a href="shop.html">Rising</a></li>
+					<li><a href="shop.html">Top Rated</a></li>
+					<li><a href="shop.html">Popular</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			  <!--
+			  <form class="navbar-form navbar-left searchbar nospace" role="search">
+				<div class="navspan">
+					<div class="form-group nospace" style="font-size: 1.2em;">
+					  <input type="text" class="form-control" style="height: 40px;" placeholder="Search Products">
 					</div>
+					<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" style="padding-top: 5px; padding-bottom: 6px;"></span></button>
 				</div>
-			</li>
-		</div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
-	
-	<div class="contactmain">
-		<img class="contactimg" src="css/burgahboyzlogo.png" alt="logo" />
-		<p class="contactheader">A Collaborative Effort</p><br>
-		<p class="contactbody">Calvin Hirsch: calvin.hirsch@greenwichschools.org<br>
-		Grahame Ung: grahame.ung@greenwichschools.org</p><br><br><br><br>
+			  </form>
+			  -->
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="contact.html"><span class="navspan">CONTACT</span></a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navspan" id="accountstatus">LOGIN</span> <span class="caret"></span></a>
+					<div class="dropdown-menu" id="account-dropdown">
+						<div class="login-dropdown">
+							<form method="post" action="ingen_javascript.htm" 
+							  onsubmit="CheckPassword();return false;" name="login">
+							Username: <input type="text" name="username" class="loginform"><br>
+							Password: <input type="password" name="password" class="loginform">
+							<input type="submit" value="LOG IN" class="loginbutton"
+							  onclick="CheckPassword();return false;">
+							</form>
+						</div>
+					</div>
+				</li>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<div class="container nospace contact">
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-4 contactleft">
+					A<br>site<br>by<br>Calvin<br>Hirsch.
+				</div>
+				<div class="col-xs-4 contactright">
+					Contact:<br>
+					calvinhirsch7@gmail.com<br>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+		
+		
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

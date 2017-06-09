@@ -9,7 +9,14 @@ body {
 
 .mainbg {
 	background-image: url("bgmain.jpg");
-	background-width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.contactbg {
+	background-image: url("mountainbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover
 }
 
 .homebutton {
@@ -25,12 +32,6 @@ body {
 	display: block;
 }
 
-.navigation {
-	padding: 0;
-	margin: 0;
-	border-radius: 0;
-}
-
 .nospace {
 	padding: 0;
 	margin: 0;
@@ -43,19 +44,24 @@ body {
 }
 
 .navbar {
-	padding: 0 8% 0 8%;
+	/* padding: 0 8% 0 8%; */
 	/*background-color: #111;*/
-	border-radius: 0;
-	border-bottom: 1px solid #ff4444;
 	background-color: transparent;
 	background: transparent;
 	border-color: transparent;
 }
 
+
+
 .navbar-header {
 }
 
-.brand {
+.navbar-toggle {
+	background-image: url('menuicon.svg');
+	background-size: 100%;
+}
+
+.brandimg {
 	padding-bottom: 5px;
 	padding-right: 5px;
 	height: 68px;
@@ -64,7 +70,6 @@ body {
 .navbar-nav>li {
 	padding: 0;
 	margin: 0;
-	height: 100px;
 }
 
 .navbar-nav>li>a {
@@ -74,17 +79,11 @@ body {
 	padding-left: 30px;
 	padding-right: 30px;
 	margin: auto;
-	min-width: 8vw;
+	/*min-width: 8vw;*/
 	text-align: center;
 	font-size: 1.3em;
 	font-family: DistProTh;
 	letter-spacing: 1px;
-}
-
-.navbar-nav>.open {
-	background-color: transparent;
-	background: transparent;
-	border-color: transparent;
 }
 
 .navbar-nav>li>a:not(.active) {
@@ -93,6 +92,20 @@ body {
 	background-color: transparent;
 	background: transparent;
 	border-color: transparent;
+}
+
+.nav>li>a:focus {
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
+	color: #DDDDDD;
+}
+
+.nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: transparent;
+	background: transparent;
+	border-color: transparent;
+	color: #FFFFFF;
 }
 
 .active {
@@ -132,17 +145,19 @@ body {
 	padding-bottom: 20%;
 }
 
-.dropdown-menu, .dropdownnav {
-	padding: 0;
-	margin: 0;
+.dropdown-menu {
 	font-family: DistProTh;
 	background-color: transparent;
 	background: transparent;
 	border-color: transparent;
 }
 
-.dropdown-menu>li>a, .dropdowna {
+.dropdown-menu.open {
+	
+}
+.dropdown-menu>li>a {
 	/*background-color: #111;*/
+	
 	padding: 12px;
 	padding-left: 30px;
 	padding-right: 5px;
@@ -169,6 +184,28 @@ body {
 	border-color: transparent;
 }
 
+/*  COLLAPSED NAVBAR  */
+
+@media (max-width: 767px) {
+	.brandimg {
+		height: 50px;
+		margin-top: -10px;
+	}
+	/*
+	.navbar {
+		overflow-y: hidden;
+	}
+	
+	.navbar-collapse, .collapse {
+		overflow-x: hidden;
+	}
+	*/
+	.dropdown-menu {
+		width: 90%;
+		text-align: center;
+	}
+}
+
 
 
 .hometext {
@@ -186,6 +223,7 @@ body {
 	color: #EEEEEE;
 	letter-spacing: 10;
 	text-align: center;
+	max-width: 100%;
 }
 
 .homedescription {
@@ -298,31 +336,26 @@ body {
 
 
 
-.contactmain {
-	padding: 0;
-	margin: 0;
-	background-color: #111;
+.contact {
+	color: #FFFFFF;
+	font-family: DistProTh;
+	width: 100%;
 	text-align: center;
-	color: #ff4444;
+	padding-top: 8%;
+	padding-bottom: 30%;
 }
 
-.contactimg {
-	width: 40%;
-}
-
-.contactheader {
-	font-family: Lemon;
-	color: white;
+.contactleft {
 	font-size: 3em;
-	padding: 5px;
-	border: 0px solid #ff4444;
-	border-bottom-width: 2px;
+	text-align: right;
 }
 
-.contactbody {
-	color: white;
-	font-size: 1.3em;
+.contactright {
+	text-align: left;
 }
+
+
+
 
 .homedark {
 	background-image: url("carbonfiber.jpg");
@@ -364,7 +397,8 @@ body {
 }
 
 .homeimg {
-	width: 100%;
+	width: 96%;
+	margin: 2%;
 }
 
 .homeinfo {
@@ -436,7 +470,8 @@ body {
 
 .homeimgbg {
 	background-image: url("serverroom.jpg");
-	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover
 }
 
 .homeimgbg>.hometitle {
@@ -454,7 +489,7 @@ body {
 	color: #DDDDDD;
 	font-family: DistProTh;
 	font-weight: 900;
-	
+	text-align: center;
 }
 
 .footer>.row>div>.contact {
