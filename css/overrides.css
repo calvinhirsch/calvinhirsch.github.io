@@ -44,7 +44,7 @@ body {
 }
 
 .navbar {
-	/* padding: 0 8% 0 8%; */
+	padding: 0 8% 0 8%;
 	/*background-color: #111;*/
 	background-color: transparent;
 	background: transparent;
@@ -200,6 +200,7 @@ body {
 		overflow-x: hidden;
 	}
 	*/
+	
 	.dropdown-menu {
 		width: 90%;
 		text-align: center;
@@ -235,6 +236,16 @@ body {
 	padding-left: 20%;
 	padding-right: 20%;
 	padding-bottom: 16%;
+}
+
+@media (max-width: 767px) {
+	.hometitle {
+		font-size: 4em;
+	}
+	.homedescription {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
 }
 
 
@@ -352,6 +363,27 @@ body {
 
 .contactright {
 	text-align: left;
+	font-size: 1.5em;
+	border-width: 0;
+	border-left-width: 1px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	padding-bottom: 10px;
+	color: #DDDDDD;
+}
+
+.contactright>b {
+	color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+	.contactleft {
+		font-size: 2em;
+	}
+	
+	.contactright {
+		font-size: 1em;
+	}
 }
 
 
@@ -363,7 +395,7 @@ body {
 	color: #FFFFFF;
 	font-family: DistProTh;
 	width: 100%;
-	padding: 0;
+	padding: 10px;
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
@@ -417,7 +449,7 @@ body {
 	color: #504aa5;
 	font-family: DistProTh;
 	width: 100%;
-	padding: 0;
+	padding: 10px;
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
@@ -477,6 +509,12 @@ body {
 .homeimgbg>.hometitle {
 	padding-top: 10%;
 	padding-bottom: 50%;
+}
+
+@media (max-width: 767px) {
+	.homedark>.row>div>h1, .homelight>.row>div>h1 {
+		font-size: 3.2em;
+	}
 }
 
 
